@@ -1297,5 +1297,16 @@
                 <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
+        <option name="YAML_ANCHOR">
+            <value>
+                <option name="FOREGROUND" value="94dbfd" />
+            </value>
+        </option>
+        <option name="YAML_TEXT">
+            <value>
+                <option name="FOREGROUND" value="cd9069" />
+                <option name="EFFECT_TYPE" value="5" />
+            </value>
+        </option>
     </attributes>
 </scheme>

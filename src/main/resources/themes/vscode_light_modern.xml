@@ -1706,6 +1706,11 @@
                 <option name="FOREGROUND" value="800000"/>
             </value>
         </option>
+        <option name="YAML_ANCHOR">
+            <value>
+                <option name="FOREGROUND" value="1080" />
+            </value>
+        </option>
         <option name="YAML_COMMENT">
             <value>
                 <option name="FOREGROUND" value="8000"/>
@@ -1743,7 +1748,7 @@
         </option>
         <option name="YAML_TEXT">
             <value>
-                <option name="FOREGROUND" value="a31515"/>
+                <option name="FOREGROUND" value="ff" />
             </value>
         </option>
 
