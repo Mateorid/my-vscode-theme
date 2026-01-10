@@ -1318,11 +1318,6 @@
                 <option name="FOREGROUND" value="dcdcaa"/>
             </value>
         </option>
-        <option name="ReSharper.FSHARP_FIELD_IDENTIFIER">
-            <value>
-                <option name="FOREGROUND" value="4fc1ff"/>
-            </value>
-        </option>
         <option name="ReSharper.FSHARP_FUNCTION_IDENTIFIER">
             <value>
                 <option name="FOREGROUND" value="dcdcaa"/>
