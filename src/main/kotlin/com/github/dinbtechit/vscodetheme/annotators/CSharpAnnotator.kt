@@ -3,9 +3,7 @@ package com.github.dinbtechit.vscodetheme.annotators
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors
 import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.psi.PsiElement
-import com.intellij.psi.tree.TokenSet
 import com.intellij.util.ObjectUtils
-import com.jetbrains.rider.languages.fileTypes.csharp.kotoparser.lexer.CSharpTokenType
 
 class CSharpAnnotator : BaseAnnotator() {
     companion object {
@@ -19,15 +17,11 @@ class CSharpAnnotator : BaseAnnotator() {
             TextAttributesKey.createTextAttributesKey("DEFAULT_SECONDARY_KEYWORD", DEFAULT_KEYWORD)
 
         private val PREPROCESSOR_CONDITIONALS =
-            TokenSet.create(
-                CSharpTokenType.PP_IF_SECTION,
-                CSharpTokenType.PP_ELSE_SECTION,
-                CSharpTokenType.PP_DEFAULT,
-            )
+            setOf("PP_IF_SECTION", "PP_ELSE_SECTION", "PP_DEFAULT")
     }
 
-    override fun getKeywordType(element: PsiElement): TextAttributesKey? {
-        return when (element.text) {
+    override fun getKeywordType(element: PsiElement): TextAttributesKey? =
+        when (element.text) {
             "return",
             "yield",
             "switch",
@@ -46,11 +40,10 @@ class CSharpAnnotator : BaseAnnotator() {
             "if",
             "else",
             "default" -> {
-                if (PREPROCESSOR_CONDITIONALS.contains(element.node.elementType)) null
+                if (PREPROCESSOR_CONDITIONALS.contains(element.node.elementType.toString())) null
                 else SECONDARY_KEYWORD
             }
 
             else -> null
         }
-    }
 }
