@@ -1308,5 +1308,35 @@
                 <option name="EFFECT_TYPE" value="5" />
             </value>
         </option>
+        <option name="ReSharper.FORMAT_STRING_ITEM">
+            <value>
+                <option name="FOREGROUND" value="646695"/>
+            </value>
+        </option>
+        <option name="ReSharper.FSHARP_COMPUTATION_EXPRESSION_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="dcdcaa"/>
+            </value>
+        </option>
+        <option name="ReSharper.FSHARP_FUNCTION_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="dcdcaa"/>
+            </value>
+        </option>
+        <option name="ReSharper.FSHARP_NAMESPACE_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="4ec9b0"/>
+            </value>
+        </option>
+        <option name="ReSharper.FSHARP_OPERATOR_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="569cd6"/>
+            </value>
+        </option>
+        <option name="ReSharper.FSHARP_UNION_CASE_IDENTIFIER">
+            <value>
+                <option name="FOREGROUND" value="4fc1ff"/>
+            </value>
+        </option>
     </attributes>
 </scheme>
